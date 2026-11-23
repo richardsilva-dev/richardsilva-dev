@@ -123,7 +123,8 @@ function render(items){
  const state=p.private?'PRIVADO · EM DESENVOLVIMENTO':(p.released?'VERSÃO PUBLICADA':'EM DESENVOLVIMENTO');
  const cls=p.private?'private':'';
  const href='https://github.com/richardsilva-dev/'+encodeURIComponent(p.repo);
- return '<article class="glass project reveal visible"><div class="project-top"><div class="project-icon">'+escapeHTML(p.icon)+'</div><span class="status '+cls+'">'+state+'</span></div><h3>'+escapeHTML(p.name)+'</h3><p>'+escapeHTML(p.description||p.fallback)+'</p><div class="project-bottom"><div class="project-tags">'+p.tags.map(t=>'<span>'+escapeHTML(t)+'</span>').join('')+'</div><a class="project-link" href="'+href+'" target="_blank" rel="noreferrer">'+(p.private?'REPOSITÓRIO PRIVADO':'VER NO GITHUB ↗')+'</a></div></article>';
+ const meta=p.private?'REPOSITÓRIO PRIVADO':((p.language||'CODE')+' · '+(p.stars||0)+' ★ · atualizado '+(p.updated?new Date(p.updated).toLocaleDateString('pt-BR'):'recentemente'));
+ return '<article class="glass project reveal visible"><div class="project-top"><div class="project-icon">'+escapeHTML(p.icon)+'</div><span class="status '+cls+'">'+state+'</span></div><h3>'+escapeHTML(p.name)+'</h3><p>'+escapeHTML(p.description||p.fallback)+'</p><div class="project-bottom"><div><div class="project-tags">'+p.tags.map(t=>'<span>'+escapeHTML(t)+'</span>').join('')+'</div><div class="sync-note">'+escapeHTML(meta)+'</div></div><a class="project-link" href="'+href+'" target="_blank" rel="noreferrer">'+(p.private?'REPOSITÓRIO PRIVADO':'VER NO GITHUB ↗')+'</a></div></article>';
  }).join('')||'<div class="glass">Nenhum projeto nesta categoria ainda.</div>';
 }
 async function syncProjects(){
