@@ -1,4 +1,10 @@
 <!-- Profile README: terminal / cyber / developer lab -->
+
+<div align="center">
+
+[![PORTFOLIO](https://img.shields.io/badge/ENTER_MY_PORTFOLIO-00FF9C?style=for-the-badge&logo=vercel&logoColor=050816)](https://richardsilva-dev.github.io/richardsilva-dev/)
+
+</div>
 <div align="center">
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:050816,50:0b3b36,100:00ff9c&height=190&section=header&text=RICHARD%20D.%20SILVA&fontSize=38&fontColor=E6FFF5&fontAlignY=38&desc=building%20systems%20%7C%20learning%20in%20public&descAlignY=58&descSize=14" width="100%" />
