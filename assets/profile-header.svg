@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="230" viewBox="0 0 1200 230">
+<defs>
+ <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#10130f"/><stop offset=".52" stop-color="#293323"/><stop offset="1" stop-color="#66502f"/></linearGradient>
+ <linearGradient id="gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#b9a06a"/><stop offset=".5" stop-color="#7d8753"/><stop offset="1" stop-color="#d0b77b"/></linearGradient>
+ <linearGradient id="olive" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#4d5b3c"/><stop offset="1" stop-color="#a38b58"/></linearGradient>
+ <filter id="glow"><feGaussianBlur stdDeviation="14"/></filter>
+</defs>
+<rect width="1200" height="230" rx="4" fill="url(#bg)"/>
+<path d="M0 0H350L230 230H0Z" fill="url(#olive)" opacity=".85"/>
+<path d="M0 0H245L115 230H0Z" fill="#a38b58" opacity=".22"/>
+<path d="M1200 0H850L970 230H1200Z" fill="url(#gold)" opacity=".82"/>
+<path d="M1200 0H1015L1135 230H1200Z" fill="#c4a66b" opacity=".24"/>
+<path d="M0 190C180 120 230 160 350 230H0Z" fill="#1b2419" opacity=".65"/>
+<path d="M1200 190C1020 120 970 160 850 230H1200Z" fill="#1b2419" opacity=".65"/>
+<path d="M330 0L450 0L340 230H250Z" fill="#d0b77b" opacity=".09"/>
+<path d="M870 0L750 0L860 230H950Z" fill="#d0b77b" opacity=".09"/>
+<ellipse cx="600" cy="110" rx="280" ry="70" fill="#c2a66d" opacity=".12" filter="url(#glow)"/>
+<path d="M350 178H850" stroke="#c6b17e" stroke-opacity=".45"/>
+<text x="600" y="104" text-anchor="middle" fill="#f1ead8" font-family="Arial,sans-serif" font-size="39" font-weight="700" letter-spacing="2">RICHARD D. SILVA</text>
+<text x="600" y="137" text-anchor="middle" fill="#d3c6a5" font-family="monospace" font-size="13" letter-spacing="2">BUILDING SYSTEMS  |  LEARNING IN PUBLIC</text>
+</svg>
